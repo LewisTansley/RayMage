@@ -1,0 +1,24 @@
+﻿  main.cpp
+C:\Users\Lewis\Documents\GitHub\RayMage\player.h(14,2): warning C4091: 'typedef ': ignored on left of 'Player' when no variable is declared
+C:\Users\Lewis\Documents\GitHub\RayMage\Auxiliary\renderer.h(17,2): warning C4091: 'typedef ': ignored on left of 'Color_RGBA' when no variable is declared
+C:\Users\Lewis\Documents\GitHub\RayMage\Auxiliary\renderer.h(36,2): warning C4091: 'typedef ': ignored on left of 'Colors' when no variable is declared
+C:\Users\Lewis\Documents\GitHub\RayMage\Auxiliary\raycaster.h(25,2): warning C4091: 'typedef ': ignored on left of 'Ray' when no variable is declared
+  player.cpp
+C:\Users\Lewis\Documents\GitHub\RayMage\player.h(14,2): warning C4091: 'typedef ': ignored on left of 'Player' when no variable is declared
+  Generating Code...
+main.obj : error LNK2019: unresolved external symbol _SDL_GetTicks referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall Color_RGBA::Color_RGBA(unsigned char,unsigned char,unsigned char,unsigned char)" (??0Color_RGBA@@QAE@EEEE@Z) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall Renderer::Renderer(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,int,bool)" (??0Renderer@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HH_N@Z) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Renderer::terminate(void)" (?terminate@Renderer@@QAEXXZ) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Renderer::clearScreen(void)" (?clearScreen@Renderer@@QAEXXZ) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Renderer::redraw(void)" (?redraw@Renderer@@QAEXXZ) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Renderer::drawText(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,int,int,int,struct Color_RGBA)" (?drawText@Renderer@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHHHUColor_RGBA@@@Z) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Renderer::drawRect(struct SDL_Rect,struct Color_RGBA)" (?drawRect@Renderer@@QAEXUSDL_Rect@@UColor_RGBA@@@Z) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall RayCaster::RayCaster(class Renderer *)" (??0RayCaster@@QAE@PAVRenderer@@@Z) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: void __thiscall RayCaster::RenderWalls(struct Player *,int (* const)[24])" (?RenderWalls@RayCaster@@QAEXPAUPlayer@@QAY0BI@H@Z) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall KeyScanner::KeyScanner(void)" (??0KeyScanner@@QAE@XZ) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall KeyScanner::isKeyDown(int)" (?isKeyDown@KeyScanner@@QAE_NH@Z) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall KeyScanner::isKeyDown(enum SDL_Scancode)" (?isKeyDown@KeyScanner@@QAE_NW4SDL_Scancode@@@Z) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall KeyScanner::exitBtnPressed(void)" (?exitBtnPressed@KeyScanner@@QAE_NXZ) referenced in function "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\Lewis\Documents\GitHub\RayMage\RayCasting\Debug\RayCasting.exe : fatal error LNK1120: 15 unresolved externals
